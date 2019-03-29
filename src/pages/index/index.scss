@@ -1,0 +1,81 @@
+@import '../../static/main';
+.index{
+    position: relative;
+    .title{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+        .name{
+            font-size: $font-size-sm1;
+            color: $color-text-base;
+            font-weight: bold;
+        }
+        .all{
+            color: $color-text-light1;
+            font-size: $font-size-sm2;
+        }
+    }
+    .playlist{
+        display: flex;
+        padding: 0 15px;
+        overflow: scroll;
+        .card{
+            flex: 0 0 200px;
+            border: 1px solid $color-bg-1;
+            border-radius: 8px;
+            margin-right: 15px;
+            padding: 10px;
+            color:  $color-bg-1;
+            font-size: $font-size-sm2;
+            .name{
+                display: inline-block;
+                width: 75%;
+                height: 100px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .love{
+                display: inline-block;
+                width: 25%;
+                text-align: center;
+                height: 100px;
+                position: relative;
+                top: -50px;
+                font-size: $font-size-sm1;
+            }
+            .play{
+                position: relative;
+                left: 10px;
+                top: -20px;
+            }
+            .time{
+                position: relative;
+                right: -80px;
+                top: -20px;
+            }
+        }
+    }
+    .playerlist{
+        display: flex;
+        padding: 0 15px;
+        overflow: scroll;
+        .card{
+            flex: 0 0 50px;
+            border-radius: 8px;
+            margin-right: 15px;
+            padding: 10px;
+            color: #fff;
+            font-size: $font-size-sm2;
+            .img{
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;  
+    color: transparent;  
+}
